@@ -1373,3 +1373,65 @@ body.modal-abierto {
     }
 }
 
+
+
+/* Botón de cierre de sesión visible en el encabezado del estudiante */
+.pagina-estudiante .boton-salir-encabezado {
+    width: auto;
+    min-height: 40px;
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 0;
+    padding: 9px 13px;
+    border: 1px solid #354b66;
+    border-radius: 10px;
+    background: #111f33;
+    color: #dbeafe;
+    white-space: nowrap;
+    font-weight: 700;
+}
+
+.pagina-estudiante .boton-salir-encabezado:hover {
+    border-color: #ef7180;
+    background: #291722;
+    color: #ffc4cb;
+}
+
+.pagina-estudiante .boton-salir-encabezado .icono-cerrar-sesion {
+    font-size: 18px;
+    line-height: 1;
+}
+
+.pagina-estudiante .boton-salir-encabezado .texto-cerrar-sesion {
+    font-size: 12px;
+}
+
+@media (max-width: 760px) {
+    .pagina-estudiante .encabezado-estudiante {
+        gap: 9px;
+    }
+
+    .pagina-estudiante .boton-salir-encabezado {
+        min-height: 36px;
+        gap: 5px;
+        padding: 7px 9px;
+    }
+
+    .pagina-estudiante .boton-salir-encabezado .texto-cerrar-sesion {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 390px) {
+    .pagina-estudiante .boton-salir-encabezado .texto-cerrar-sesion {
+        display: none;
+    }
+
+    .pagina-estudiante .boton-salir-encabezado {
+        width: 36px;
+        padding: 7px;
+    }
+}
