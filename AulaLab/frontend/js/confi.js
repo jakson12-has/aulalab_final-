@@ -14,9 +14,11 @@
     ) {
         apiBase = "http://localhost:3000";
     } else {
-        apiBase = `${window.location.protocol}//${hostname}:3000`;
+        // En producción, Express sirve tanto el frontend como la API
+        // desde el mismo dominio (por ejemplo, Render).
+        apiBase = window.location.origin;
     }
-    
+
     window.AULALAB_CONFIG = Object.freeze({
         API_BASE: apiBase,
 
